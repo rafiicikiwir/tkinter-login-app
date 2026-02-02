@@ -1,79 +1,113 @@
-APLIKASI LOGIN & LOGOUT
-Tkinter + MySQL
+# 🔐 Aplikasi Login & Logout - Tkinter MySQL
 
-Aplikasi ini adalah program Login dan Logout sederhana
-menggunakan Python (Tkinter) yang terhubung dengan database MySQL.
-Aplikasi dibuat untuk keperluan pembelajaran dan tugas sekolah.
+<div align="center">
 
+![Python](https://img.shields.io/badge/python-3.x-blue.svg)
+![MySQL](https://img.shields.io/badge/database-MySQL-orange.svg)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green.svg)
 
-🧰 Kebutuhan Sistem
-- Laptop / PC
-- Python 3.x
-- XAMPP (MySQL)
-- Koneksi internet (untuk install library)
+Aplikasi desktop sederhana untuk sistem login dan logout menggunakan Python Tkinter yang terhubung dengan database MySQL.
 
+</div>
 
-🛠️ Persiapan Awal
+---
 
-1. Install Python
-   Download dan install Python dari:
-   https://www.python.org/downloads/
+## 📖 Tentang
 
-   Saat instalasi, pastikan mencentang:
-   ✔ Add Python to PATH
+Aplikasi ini adalah program autentikasi sederhana berbasis desktop yang dibuat untuk keperluan pembelajaran dan tugas sekolah. Menggunakan Python Tkinter untuk tampilan GUI dan MySQL sebagai database penyimpanan data user.
 
+## ✨ Fitur
 
-2. Install Library MySQL Connector
-   Buka Command Prompt / Terminal, lalu jalankan:
-   pip install mysql-connector-python
+- 🔐 Login dengan validasi username dan password
+- 👤 Dashboard yang menampilkan nama user
+- 🚪 Tombol logout untuk keluar dari sistem
+- 💬 Notifikasi pesan sukses dan error
+- 🎨 Tampilan GUI yang sederhana dan menarik
 
-   Tunggu sampai proses selesai tanpa error.
+## 🔧 Kebutuhan Sistem
 
+- **Python 3.7+** - [Download Python](https://www.python.org/downloads/)
+- **XAMPP** - [Download XAMPP](https://www.apachefriends.org/)
 
-3. Jalankan MySQL
-   - Buka XAMPP Control Panel
-   - Klik Start pada MySQL
-   - Pastikan status Running
+## 📦 Instalasi
 
+### 1️⃣ Clone Repository
 
-🚀 Cara Menjalankan Aplikasi
+```bash
+git clone https://github.com/username/login-logout-app.git
+cd login-logout-app
+```
 
-1. Import database
-   Import file:
-   db_login.sql
-   ke dalam MySQL menggunakan phpMyAdmin
+### 2️⃣ Install Library Python
 
-2. Buka folder project
-   Masuk ke folder aplikasi melalui Command Prompt / Terminal
+```bash
+pip install mysql-connector-python
+```
 
-3. Jalankan aplikasi
-   Ketik perintah:
-   python app.py
+### 3️⃣ Setup Database
 
+**a. Jalankan MySQL di XAMPP**
+- Buka **XAMPP Control Panel**
+- Klik **Start** pada **MySQL**
+- Pastikan statusnya **Running**
 
-🔐 Akun Login Default
-Username : admin
-Password : 12345
+**b. Import Database**
+- Buka browser, ketik: `http://localhost/phpmyadmin`
+- Klik **New** untuk buat database baru
+- Nama database: `db_login`
+- Klik tab **Import**
+- Pilih file `db_login.sql`
+- Klik **Go**
 
+## 🚀 Cara Menjalankan
 
-✨ Fitur Aplikasi
-- Halaman Login dengan tampilan dekoratif
-- Validasi Username dan Password
-- Terhubung dengan Database MySQL
-- Halaman Index menampilkan nama user
-- Tombol Logout
-- Notifikasi Login dan Logout
+```bash
+python app.py
+```
 
+## 🔑 Akun Default
 
-📌 Catatan
-- Pastikan MySQL sudah berjalan sebelum menjalankan aplikasi
-- Aplikasi ini hanya untuk keperluan pembelajaran
-- Password disimpan dalam bentuk teks biasa (tanpa enkripsi)
+| Username | Password |
+|----------|----------|
+| admin    | 12345    |
 
+## 🛠️ Troubleshooting
 
-👨‍💻 Pembuat
-Nama   : Rafie
-         M.Fachri
-         Naufal
-         Rizky S
-Tahun  : 2026
+### ❌ Error: `ModuleNotFoundError: No module named 'mysql'`
+**Solusi:**
+```bash
+pip install mysql-connector-python
+```
+
+### ❌ Error: `Can't connect to MySQL server`
+**Solusi:**
+- Pastikan MySQL di XAMPP sudah Running
+- Cek apakah port MySQL (3306) tidak bentrok
+- Restart XAMPP dan coba lagi
+
+### ❌ Error: `Access denied for user 'root'@'localhost'`
+**Solusi:**
+- Buka file `app.py`
+- Sesuaikan konfigurasi database dengan setting MySQL kamu
+
+### ❌ Login Gagal Terus
+**Solusi:**
+- Pastikan database `db_login` sudah ter-import
+- Cek apakah tabel `users` ada dan berisi data
+
+## ⚠️ Catatan Penting
+
+> Aplikasi ini dibuat untuk keperluan pembelajaran.
+> Password disimpan dalam bentuk teks biasa (tanpa enkripsi).
+> Tidak disarankan untuk penggunaan production/real project.
+
+## 👨‍💻 Pembuat
+
+<div align="center">
+
+**Rafi ahmad**,
+**Rizki Farel**,
+**Naufal Abdillah**,
+**M.Fachri**
+
+</div>
