@@ -1,8 +1,0 @@
-1. Apa fungsi fetchone()?
-fetchone() digunakan untuk mengambil satu baris data dari hasil query database.
-
-2. Mengapa query login menggunakan WHERE?
-Karena WHERE digunakan untuk mencocokkan username dan password tertentu saat proses login.
-
-3. Apa yang terjadi jika database tidak terkoneksi?
-Program akan mengalami error dan proses login tidak dapat dijalankan.
