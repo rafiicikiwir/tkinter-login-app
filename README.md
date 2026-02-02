@@ -34,8 +34,8 @@ Aplikasi ini adalah program autentikasi sederhana berbasis desktop yang dibuat u
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/username/login-logout-app.git
-cd login-logout-app
+git clone https://github.com/rafiicikiwir/tkinter-login-app.git
+cd tkinter-login-app
 ```
 
 ### 2️⃣ Install Library Python
@@ -93,7 +93,7 @@ pip install mysql-connector-python
 ### ❌ Login Gagal Terus
 **Solusi:**
 - Pastikan database `db_login` sudah ter-import
-- Cek apakah tabel `users` ada dan berisi data
+- Cek apakah tabel `user` ada dan berisi data
 
 ## ⚠️ Catatan Penting
 
